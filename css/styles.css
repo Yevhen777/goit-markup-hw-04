@@ -342,15 +342,20 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--background-color);
-  fill: var(--text-color-secondary);
+  
 }
 
-.icon-list:hover .icon-list:focus {
-  background: var(--accent-color);
+.icon-list:hover, 
+.icon-list:focus {
+  background-color: var(--accent-color);
+}
+.icon-list-carrent {
+  fill: var(--background-color);
+  background-color: var(--accent-color);
 }
 
 .section-team {
-  background-color: #f5f4fa;
+  /* background-color: #f5f4fa; */
 }
 
 .item-text-box {
@@ -391,7 +396,7 @@ body {
   padding-bottom: 94px;
 }
 
-.title-hedding {
+/* .title-hedding { */
   margin-bottom: 50px;
 }
 .heading-clients {

@@ -134,6 +134,50 @@ body {
   margin-right: 0;
 } */
 
+/* Контакты */
+
+.text-mail {
+  padding: 32px 0;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-secondary);
+
+  display: flex;
+  align-items: center;
+}
+.icon-tel-one {
+  margin-right: 10px;
+}
+
+.text-mail:hover,
+.text-mail:focus {
+  color: var(--accent-color);
+}
+
+.icon-mail-one {
+  margin-right: 10px;
+}
+
+.text-tel {
+  padding: 32px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-secondary);
+
+  display: flex;
+  align-items: center;
+}
+
+.text-tel:hover,
+.text-tel:focus {
+  color: var(--accent-color);
+}
+
 .contact-text-list {
   font-size: 14px;
   font-weight: 500;
@@ -582,42 +626,6 @@ body {
 
 .text-nav-tree:hover,
 .text-nav-tree:focus {
-  color: var(--accent-color);
-}
-
-.text-mail {
-  padding: 32px 0;
-
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color-secondary);
-
-  display: flex;
-  align-items: center;
-}
-
-.text-mail:hover,
-.text-mail:focus {
-  color: var(--accent-color);
-}
-
-.icon-mail-one {
-  margin-right: 10px;
-}
-
-.text-tel {
-  padding: 32px 0;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color-secondary);
-}
-
-.text-tel:hover,
-.text-tel:focus {
   color: var(--accent-color);
 }
 

@@ -126,9 +126,8 @@ body {
 .text-nav-one.current {
   color: var(--accent-color);
 }
-.contact-list {
+.contact-list:not(:last-child) {
   margin-right: 50px;
-  padding: 32px 0;
 }
 
 /* .text :last-child {
@@ -328,7 +327,6 @@ body {
 .icon-list-team {
   width: 44px;
   height: 44px;
-  margin-right: 10px;
 }
 .icon-list-team:not(:last-child) {
   margin-right: 10px;
@@ -342,16 +340,17 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--background-color);
-  
+  color: var(--text-color-secondary);
 }
 
-.icon-list:hover, 
+.icon-list:hover,
 .icon-list:focus {
   background-color: var(--accent-color);
+  color: var(--background-color);
 }
-.icon-list-carrent {
-  fill: var(--background-color);
-  background-color: var(--accent-color);
+
+.team-svg {
+  fill: currentColor;
 }
 
 .section-team {
@@ -395,23 +394,6 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-/* .title-hedding { */
-  margin-bottom: 50px;
-}
-.heading-clients {
-  text-align: center;
-}
-.clients-list-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 30px;
-}
-.clients-icon {
-  display: block;
-}
-
 .heading-clients {
   font-weight: 700;
   font-size: 36px;
@@ -419,26 +401,45 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color-main);
 }
+
+.title-hedding {
+  margin-bottom: 50px;
+}
+.heading-clients {
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .clients-list {
   margin-top: 50px;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
+}
+.clients-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+
+  border-radius: 4px;
+}
 /* Футер */
 .footer-list {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #2f303a;
 }
 
-.footer-list {
-  background-color: #2f303a;
+.footer-flex {
+  display: flex;
+
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -519,6 +520,51 @@ body {
   color: var(--accent-color);
 }
 
+.icon-footer {
+  margin-left: 70px;
+}
+.heading-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.footer-icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-icon-bg {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon-bg:hover,
+.footer-icon-bg:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-icon-item {
+  display: flex;
+  margin-right: 10px;
+}
+
+.footer-svg {
+  fill: var(--background-color);
+}
+
 /* Страница 2 */
 
 .logo-accent {
@@ -536,6 +582,8 @@ body {
 }
 
 .text-mail {
+  padding: 32px 0;
+
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -556,6 +604,7 @@ body {
 }
 
 .text-tel {
+  padding: 32px 0;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;

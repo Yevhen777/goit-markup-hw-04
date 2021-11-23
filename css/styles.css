@@ -153,8 +153,12 @@ body {
 }
 
 .text-mail:hover,
-.text-mail:focus {
+.text-mail:focus,
+.current {
   color: var(--accent-color);
+}
+.icon-mail-one {
+  fill: currentColor;
 }
 
 .icon-mail-one {
@@ -469,13 +473,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
-
   border-radius: 4px;
+  color: var(--text-color-secondary);
 }
+.clients-icon:hover,
+.clients-icon:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.svg-clients {
+  fill: currentColor;
+}
+
 /* Футер */
 .footer-list {
   padding-top: 60px;

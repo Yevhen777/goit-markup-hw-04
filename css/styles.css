@@ -153,8 +153,11 @@ body {
 }
 
 .text-mail:hover,
-.text-mail:focus,
-.current {
+.text-mail:focus {
+  color: var(--accent-color);
+}
+.icon-mail-one:hover,
+.icon-mail-one:focus {
   color: var(--accent-color);
 }
 .icon-mail-one {
@@ -180,6 +183,9 @@ body {
 .text-tel:hover,
 .text-tel:focus {
   color: var(--accent-color);
+}
+.icon-tel-one {
+  fill: currentColor;
 }
 
 .contact-text-list {

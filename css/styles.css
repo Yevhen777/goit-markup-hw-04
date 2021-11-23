@@ -396,6 +396,9 @@ body {
 .team-svg {
   fill: currentColor;
 }
+.icon-list-icon {
+  background-color: var(--accent-color);
+}
 
 .section-team {
   /* background-color: #f5f4fa; */

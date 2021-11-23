@@ -565,6 +565,10 @@ body {
   fill: var(--background-color);
 }
 
+.footer-svg-icon {
+  background-color: var(--accent-color);
+}
+
 /* Страница 2 */
 
 .logo-accent {
